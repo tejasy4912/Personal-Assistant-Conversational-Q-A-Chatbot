@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Pawar's Personal Assistant</title>
+    <script>
+        async function sendMessage() {
+            const user_input = document.getElementById("user_input").value;
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ user_input })
+            });
+            const data = await response.json();
+            document.getElementById("chat_history").innerHTML += `<p><strong>You:</strong> ${user_input}</p>`;
+            document.getElementById("chat_history").innerHTML += `<p><strong>Assistant:</strong> ${data.reply}</p>`;
+            document.getElementById("user_input").value = "";
+        }
+    </script>
+</head>
+<body>
+    <h1>Tejas Pawar's Personal Assistant</h1>
+    <div id="chat_history" style="border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll;"></div>
+    <input type="text" id="user_input" placeholder="Ask something..." style="width: 80%;">
+    <button onclick="sendMessage()">Send</button>
+</body>
+</html>
