@@ -1,5 +1,6 @@
 flask
 openai==0.28.0
+langchain==0.0.300
 python-dotenv
 gunicorn
 
