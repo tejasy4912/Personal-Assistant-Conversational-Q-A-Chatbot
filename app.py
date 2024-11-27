@@ -3,6 +3,9 @@ import openai
 import json
 from dotenv import load_dotenv
 import os
+from langchain.chains import ConversationChain
+from langchain.chat_models import ChatOpenAI
+from langchain.memory import ConversationBufferMemory
 
 # Load environment variables
 load_dotenv()
@@ -56,25 +59,10 @@ except Exception as e:
     print(f"Error loading profile data: {str(e)}")
     profile_context = ""
 
-# Chatbot function
-def chatbot(user_input, conversation_history):
-    # Add user input to conversation
-    conversation_history.append({"role": "user", "content": user_input})
-
-    try:
-        # Call OpenAI API
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=conversation_history
-        )
-        reply = response["choices"][0]["message"]["content"]
-
-        # Add assistant reply to conversation
-        conversation_history.append({"role": "assistant", "content": reply})
-
-        return reply
-    except Exception as e:
-        return f"An error occurred: {str(e)}"
+# Initialize LangChain components
+memory = ConversationBufferMemory(return_messages=True)
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+conversation = ConversationChain(llm=llm, memory=memory)
 
 # Flask routes
 @app.route("/")
@@ -87,14 +75,19 @@ def chat():
     if not user_input:
         return jsonify({"error": "No input provided"}), 400
 
-    # Maintain a stateless conversation history
-    conversation_history = [
-        {"role": "system", "content": f"You are Tejas Pawar's professional assistant. Use the following profile context:\n{profile_context}"}
-    ]
-    reply = chatbot(user_input, conversation_history)
-    if "An error occurred" in reply:
-        return jsonify({"error": reply}), 500
-    return jsonify({"reply": reply})
+    try:
+        # Add profile context at the beginning of the conversation if it's the first query
+        if len(memory.chat_memory.messages) == 0:
+            memory.chat_memory.add_user_message(
+                "You are Tejas Pawar's professional assistant. "
+                f"Here is his profile context: {profile_context}."
+            )
+
+        # Generate a response using LangChain
+        reply = conversation.run(user_input)
+        return jsonify({"reply": reply})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Use the PORT provided by Render or default to 5000
