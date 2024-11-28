@@ -61,7 +61,7 @@ except Exception as e:
 
 # Initialize LangChain components
 memory = ConversationBufferMemory(return_messages=True)
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=1)
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2)
 conversation = ConversationChain(llm=llm, memory=memory)
 
 # Flask routes
