@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah - Tejas's Personal Assistant</title>
+    <title>Chat with Sarah</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@700&display=swap');
 
@@ -12,14 +12,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-        }
-
-        h1 {
-            background-color: #907ACF;
-            color: white;
-            margin: 0;
-            padding: 15px;
-            text-align: center;
         }
 
         #chat_container {
@@ -33,6 +25,15 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #chat_header {
+            background-color: #907ACF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
         }
 
         #chat_history {
@@ -143,8 +144,8 @@
     </script>
 </head>
 <body>
-    <h1>Sarah - Tejas's Personal Assistant</h1>
     <div id="chat_container">
+        <div id="chat_header">Sarah - Tejas's Personal Assistant</div>
         <div id="chat_history"></div>
         <div id="chat_input_container">
             <input type="text" id="user_input" placeholder="Ask something..." />
