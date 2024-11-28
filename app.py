@@ -61,7 +61,7 @@ except Exception as e:
 
 # Initialize LangChain components
 memory = ConversationBufferMemory(return_messages=True)
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=1)
 conversation = ConversationChain(llm=llm, memory=memory)
 
 # Flask routes
@@ -78,16 +78,29 @@ def chat():
     try:
         # Add profile context at the beginning of the conversation if it's the first query
         if len(memory.chat_memory.messages) == 0:
-            memory.chat_memory.add_user_message(
-                "You are Tejas Pawar's professional assistant. "
-                f"Here is his profile context: {profile_context}."
+            intro_context = (
+                f"You are Sarah, Tejas Pawar's professional assistant. Use the following profile context to answer queries in a rich and dynamic way. "
+                "Analyze the question carefully and draw on the most relevant parts of the context, including skills, experiences, and projects, "
+                "to provide structured, elaborative responses. When asked who you are, respond with: "
+                "'Hi, I’m Sarah, Tejas's personal assistant. I’d be happy to share details about his experience, skills, and why he would be a great fit for your company. Let me know how I can assist you!'\n\n"
+                f"{profile_context}"
             )
+            memory.chat_memory.add_user_message(intro_context)
 
-        # Generate a response using LangChain
-        reply = conversation.run(user_input)
+        # Check for greetings or identity-related queries
+        if user_input.lower() in ["hi", "hello", "who are you"]:
+            reply = (
+                "Hi, I’m Sarah, Tejas's personal assistant. I’d be happy to share details about his experience, skills, and why he would be a great fit for your company. "
+                "Let me know how I can assist you!"
+            )
+        else:
+            # Generate a response using LangChain
+            reply = conversation.run(user_input)
+
         return jsonify({"reply": reply})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use the PORT provided by Render or default to 5000
+    app.run(host="0.0.0.0", port=port, debug=False)
