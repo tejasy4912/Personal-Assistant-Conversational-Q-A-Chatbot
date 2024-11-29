@@ -17,8 +17,9 @@
         #chat_container {
             display: flex;
             flex-direction: column;
-            width: 350px;
-            height: 500px;
+            width: 90%;
+            max-width: 400px;
+            height: 90vh;
             margin: 20px auto;
             background: white;
             border: 1px solid #ccc;
@@ -67,6 +68,12 @@
             border-radius: 10px 10px 0 10px;
         }
 
+        .typing-indicator {
+            font-style: italic;
+            color: #aaa;
+            margin: 5px 0;
+        }
+
         #chat_input_container {
             display: flex;
             padding: 10px;
@@ -97,11 +104,39 @@
         #send_button:hover {
             background-color: #7a69b5;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            #chat_container {
+                width: 100%;
+                height: 95vh;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            #chat_header {
+                font-size: 14px;
+            }
+
+            .chat-bubble {
+                font-size: 12px;
+            }
+
+            #send_button {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            #user_input {
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Display the default message when the chat loads
-            const chatHistory = document.getElementById("chat_history");
             displayMessage(
                 "Hi, I’m Sarah, Tejas's personal assistant. I’d be happy to share details about his experience, skills, and why he would be a great fit for your company. Let me know how I can assist you!",
                 "assistant"
@@ -115,7 +150,10 @@
             // Add user's message to the chat
             displayMessage(userInput, "user");
 
-            // Fetch response from the server
+            // Show typing indicator
+            const typingIndicator = showTypingIndicator();
+
+            // Simulate a delay while the bot is "thinking"
             const response = await fetch("/chat", {
                 method: "POST",
                 headers: {
@@ -124,6 +162,9 @@
                 body: JSON.stringify({ user_input: userInput }),
             });
 
+            // Remove typing indicator once response is received
+            typingIndicator.remove();
+
             const data = await response.json();
 
             // Add assistant's reply to the chat
@@ -131,6 +172,25 @@
 
             // Clear input field
             document.getElementById("user_input").value = "";
+        }
+
+        function showTypingIndicator() {
+            const chatHistory = document.getElementById("chat_history");
+            const typingIndicator = document.createElement("div");
+            typingIndicator.className = "typing-indicator";
+            typingIndicator.textContent = "Sarah is typing";
+            chatHistory.appendChild(typingIndicator);
+
+            // Add the "..." animation
+            let dots = 0;
+            const interval = setInterval(() => {
+                dots = (dots + 1) % 4; // Cycle through 0, 1, 2, 3
+                typingIndicator.textContent = "Sarah is typing" + ".".repeat(dots);
+            }, 500);
+
+            // Return the typing indicator element and stop interval
+            typingIndicator.removeTyping = () => clearInterval(interval);
+            return typingIndicator;
         }
 
         function displayMessage(message, sender) {
