@@ -5,12 +5,27 @@
         "phone": "(617) 659-4081",
         "email": "tejas21.work@gmail.com",
         "links": [
-            "LinkedIn",
-            "Portfolio",
-            "GitHub"
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/tejaspawar21/"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tejasy4912"
+            },
+            {
+                "name": "Portfolio",
+                "url": "https://www.tejaspawar.in/"
+            }
         ]
     },
     "summary": "Data scientist with a strong foundation in Python, ETL, Experimental Design, and Machine Learning for analyzing business needs, executing process improvements, and supporting decision-making, with a track record of successful project completion.",
+    "work_authorization": {
+        "status": "Authorized to work in the United States",
+        "details": "Currently on F1 STEM OPT, eligible to work for any employer for 3 years without sponsorship.",
+        "sponsorship_preference": "Would appreciate visa sponsorship if possible.",
+        "employment_type": "Open to full-time or contract-based opportunities."
+    },
     "education": {
         "masters": {
             "degree": "Master of Science in Applied Data Analytics",
@@ -257,7 +272,7 @@
     ],
     "publications": [
         {
-            "title": "DNA Sequencing-induced Cancer Detection: A Representation Learning-inspired Sustainable Transformation in Internet of Healthcare",
+            "title": "DNA Sequencing-induced Cancer Detection: A Representation Learning-inspired Sustainable Transformation in Internet of Healthcare it received Best Research Paper Award",
             "conference": "8th International Conference on Emerging Applications of Information Technology 2024",
             "publication": "Springer Journal - Machine Learning for Social Transformation",
             "award": "Best Research Paper Award"
