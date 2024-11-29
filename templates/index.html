@@ -12,18 +12,19 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            height: 100%;
         }
 
         #chat_container {
             display: flex;
             flex-direction: column;
-            width: 90%;
-            max-width: 400px;
-            height: 90vh;
-            margin: 20px auto;
+            width: 100%;
+            max-width: 450px;
+            height: 100vh;
+            margin: 0 auto;
             background: white;
             border: 1px solid #ccc;
-            border-radius: 10px;
+            border-radius: 0;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -31,9 +32,9 @@
         #chat_header {
             background-color: #907ACF;
             color: white;
-            padding: 10px;
+            padding: 12px;
             text-align: center;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
         }
 
@@ -42,16 +43,16 @@
             padding: 10px;
             overflow-y: auto;
             background-color: #f9f9f9;
+            word-wrap: break-word;
         }
 
         .chat-bubble {
             max-width: 80%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 10px;
             border-radius: 10px;
             font-size: 14px;
             line-height: 1.4;
-            word-wrap: break-word;
         }
 
         .chat-bubble-assistant {
@@ -83,7 +84,7 @@
 
         #user_input {
             flex: 1;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ddd;
             border-radius: 20px;
             outline: none;
@@ -105,38 +106,66 @@
             background-color: #7a69b5;
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
+        /* Responsive styles for small devices */
+        @media (max-width: 768px) {
             #chat_container {
                 width: 100%;
-                height: 95vh;
-                margin: 0;
+                height: 100%;
                 border-radius: 0;
-                box-shadow: none;
             }
 
             #chat_header {
-                font-size: 14px;
+                font-size: 16px;
+                padding: 10px;
             }
 
             .chat-bubble {
                 font-size: 12px;
-            }
-
-            #send_button {
-                padding: 8px 15px;
-                font-size: 12px;
+                padding: 8px;
             }
 
             #user_input {
-                padding: 8px;
                 font-size: 12px;
+                padding: 8px;
+            }
+
+            #send_button {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
+
+        /* Further adjustments for very small devices */
+        @media (max-width: 480px) {
+            #chat_container {
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .chat-bubble {
+                font-size: 11px;
+                padding: 6px;
+            }
+
+            #chat_input_container {
+                padding: 8px;
+            }
+
+            #user_input {
+                padding: 6px;
+                font-size: 11px;
+            }
+
+            #send_button {
+                padding: 6px 10px;
+                font-size: 11px;
             }
         }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Display the default message when the chat loads
             displayMessage(
                 "Hi, I’m Sarah, Tejas's personal assistant. I’d be happy to share details about his experience, skills, and why he would be a great fit for your company. Let me know how I can assist you!",
                 "assistant"
@@ -147,13 +176,10 @@
             const userInput = document.getElementById("user_input").value.trim();
             if (!userInput) return;
 
-            // Add user's message to the chat
             displayMessage(userInput, "user");
 
-            // Show typing indicator
             const typingIndicator = showTypingIndicator();
 
-            // Simulate a delay while the bot is "thinking"
             const response = await fetch("/chat", {
                 method: "POST",
                 headers: {
@@ -162,15 +188,12 @@
                 body: JSON.stringify({ user_input: userInput }),
             });
 
-            // Remove typing indicator once response is received
             typingIndicator.remove();
 
             const data = await response.json();
 
-            // Add assistant's reply to the chat
             displayMessage(data.reply, "assistant");
 
-            // Clear input field
             document.getElementById("user_input").value = "";
         }
 
@@ -181,14 +204,12 @@
             typingIndicator.textContent = "Sarah is typing";
             chatHistory.appendChild(typingIndicator);
 
-            // Add the "..." animation
             let dots = 0;
             const interval = setInterval(() => {
-                dots = (dots + 1) % 4; // Cycle through 0, 1, 2, 3
+                dots = (dots + 1) % 4;
                 typingIndicator.textContent = "Sarah is typing" + ".".repeat(dots);
             }, 500);
 
-            // Return the typing indicator element and stop interval
             typingIndicator.removeTyping = () => clearInterval(interval);
             return typingIndicator;
         }
@@ -199,7 +220,7 @@
             messageBubble.className = `chat-bubble chat-bubble-${sender}`;
             messageBubble.textContent = message;
             chatHistory.appendChild(messageBubble);
-            chatHistory.scrollTop = chatHistory.scrollHeight; // Scroll to the bottom
+            chatHistory.scrollTop = chatHistory.scrollHeight;
         }
     </script>
 </head>
