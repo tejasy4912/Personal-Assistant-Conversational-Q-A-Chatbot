@@ -46,10 +46,23 @@
             word-wrap: break-word;
         }
 
+        .chat-bubble-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .chat-bubble-container.user {
+            flex-direction: row-reverse;
+        }
+
+        .chat-bubble-container.assistant {
+            flex-direction: row;
+        }
+
         .chat-bubble {
             max-width: 80%;
             padding: 12px;
-            margin-bottom: 10px;
             border-radius: 10px;
             font-size: 14px;
             line-height: 1.4;
@@ -58,15 +71,30 @@
         .chat-bubble-assistant {
             background-color: #907ACF;
             color: white;
-            align-self: flex-start;
             border-radius: 10px 10px 10px 0;
         }
 
         .chat-bubble-user {
             background-color: #ddd;
             color: black;
-            align-self: flex-end;
             border-radius: 10px 10px 0 10px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .avatar.assistant {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/4202/4202850.png'); /* Sarah's new avatar */
+        }
+
+        .avatar.user {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/847/847969.png'); /* User's cartoon avatar */
         }
 
         .typing-indicator {
@@ -216,10 +244,26 @@
 
         function displayMessage(message, sender) {
             const chatHistory = document.getElementById("chat_history");
+
+            const messageContainer = document.createElement("div");
+            messageContainer.className = `chat-bubble-container ${sender}`;
+
+            const avatar = document.createElement("div");
+            avatar.className = `avatar ${sender}`;
+
             const messageBubble = document.createElement("div");
             messageBubble.className = `chat-bubble chat-bubble-${sender}`;
-            messageBubble.textContent = message;
-            chatHistory.appendChild(messageBubble);
+
+            // Check for URLs and convert them to clickable links
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            messageBubble.innerHTML = message.replace(urlRegex, (url) => {
+                return `<a href="${url}" target="_blank" style="color: inherit; text-decoration: underline;">${url}</a>`;
+            });
+
+            messageContainer.appendChild(avatar);
+            messageContainer.appendChild(messageBubble);
+
+            chatHistory.appendChild(messageContainer);
             chatHistory.scrollTop = chatHistory.scrollHeight;
         }
     </script>
