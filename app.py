@@ -27,7 +27,6 @@ def load_profile_data(file_path):
         raise Exception(f"Profile data file '{file_path}' contains invalid JSON.")
 
 # Build detailed context
-# Build detailed context
 def build_detailed_context(profile_data):
     # Extract contact information
     contact_info = (
@@ -123,13 +122,17 @@ except Exception as e:
 
 # Initialize LangChain components
 memory = ConversationBufferMemory(return_messages=True)
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=1)
+llm = ChatOpenAI(model="gpt-4", temperature=0.2)
 conversation = ConversationChain(llm=llm, memory=memory)
 
 # Flask routes
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/resume", methods=["GET"])
+def get_resume():
+    return app.send_static_file("Resume-Tejas Pawar.pdf")
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -142,7 +145,7 @@ def chat():
         if len(memory.chat_memory.messages) == 0:
             intro_context = (
                 f"You are Sarah, Tejas Pawar's professional assistant. Use the following profile context to answer queries in a concise, structured way, "
-                "avoiding unnecessary repetition. Focus on relevant details from the context to provide insightful context rich answers. Additionally, if there is a job description posted Match the job description with Tejas's experience, technical and soft skills, projects, and achievements. Focus on key highlights that make him a strong candidate.\n\n"
+                "avoiding unnecessary repetition. Focus on relevant details from the context to provide insightful context-rich answers. Additionally, if there is a job description posted, match the job description with Tejas's experience, technical and soft skills, projects, and achievements. Focus on key highlights that make him a strong candidate.\n\n"
                 f"{profile_context}"
             )
             memory.chat_memory.add_user_message(intro_context)
@@ -150,6 +153,9 @@ def chat():
         # Handle user queries dynamically
         if user_input.lower() in ["hi", "hello", "who are you"]:
             reply = "Hi, I’m Sarah. Let me know how I can assist you with Tejas's profile, experience, or projects."
+        elif "resume" in user_input.lower():
+            resume_url = request.host_url + "resume"
+            reply = f"You can download Tejas's resume here: [Download Resume]({resume_url})"
         else:
             # Generate a response using LangChain
             reply = conversation.run(user_input)
