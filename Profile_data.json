@@ -16,7 +16,16 @@
             {
                 "name": "Portfolio",
                 "url": "https://www.tejaspawar.in/"
+            },
+            {
+                "name": "Meet with Tejas",
+                "url": "https://calendly.com/tejas_pawar"
+            },
+            {
+                "name": "Resume of Tejas",
+                "url": "https://www.tejaspawar.in/_files/ugd/48cfe5_18dd4f942dac4ae685312357cee4dfb2.pdf"
             }
+
         ]
     },
     "summary": "Data scientist with a strong foundation in Python, ETL, Experimental Design, and Machine Learning for analyzing business needs, executing process improvements, and supporting decision-making, with a track record of successful project completion.",
