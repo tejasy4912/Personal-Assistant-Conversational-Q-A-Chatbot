@@ -130,9 +130,6 @@ conversation = ConversationChain(llm=llm, memory=memory)
 def home():
     return render_template("index.html")
 
-@app.route("/resume", methods=["GET"])
-def get_resume():
-    return app.send_static_file("Resume-Tejas Pawar.pdf")
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -153,9 +150,6 @@ def chat():
         # Handle user queries dynamically
         if user_input.lower() in ["hi", "hello", "who are you"]:
             reply = "Hi, I’m Sarah. Let me know how I can assist you with Tejas's profile, experience, or projects."
-        elif "resume" in user_input.lower():
-            resume_url = request.host_url + "resume"
-            reply = f"You can download Tejas's resume here: [Download Resume]({resume_url})"
         else:
             # Generate a response using LangChain
             reply = conversation.run(user_input)
