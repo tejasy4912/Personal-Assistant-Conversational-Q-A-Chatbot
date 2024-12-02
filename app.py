@@ -122,7 +122,7 @@ except Exception as e:
 
 # Initialize LangChain components
 memory = ConversationBufferMemory(return_messages=True)
-llm = ChatOpenAI(model="gpt-4", temperature=0.2)
+llm = ChatOpenAI(model="gpt-4", temperature=0)
 conversation = ConversationChain(llm=llm, memory=memory)
 
 # Flask routes
