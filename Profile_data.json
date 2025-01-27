@@ -114,6 +114,7 @@
             "Streamlit",
             "Docker",
             "Databricks",
+            "ML Flow",
             "Google Vertex AI",
             "LangChain",
             "LoRA",
@@ -193,6 +194,17 @@
         ]
     },
     "experience": [
+        {
+            "role": "Data Scientist",
+            "organization": "DataBuddy",
+            "duration": "May 2024 - Present",
+            "responsibilities": [
+                "Building AI agents with LLM-based RAG pipelines, using spark to handle big data and automate data scientist’s workloads.",
+                "Developed Local Large Language Models (LLMs) using TensorFlow and PyTorch, improving conversational systems",
+                "Applied prompting techniques and fine-tuned LLMs, increasing task-specific performance of generative AI by 25%",
+                "Developing MLflow pipelines with Databricks for cross-validation, model optimization, and scalable docker deployment"
+            ]
+        },
         {
             "role": "Graduate Teaching and Research Assistant",
             "organization": "Boston University",
