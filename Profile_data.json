@@ -3,7 +3,7 @@
     "contact": {
         "address": "Boston, MA 02135",
         "phone": "(617) 659-4081",
-        "email": "tejas21.work@gmail.com",
+        "email": "tejasypawar8@gmail.com",
         "links": [
             {
                 "name": "LinkedIn",
@@ -195,47 +195,82 @@
     },
     "experience": [
         {
-            "role": "Data Scientist",
-            "organization": "DataBuddy",
-            "duration": "May 2024 - Present",
-            "responsibilities": [
-                "Building AI agents with LLM-based RAG pipelines, using spark to handle big data and automate data scientist’s workloads.",
-                "Developed Local Large Language Models (LLMs) using TensorFlow and PyTorch, improving conversational systems",
-                "Applied prompting techniques and fine-tuned LLMs, increasing task-specific performance of generative AI by 25%",
-                "Developing MLflow pipelines with Databricks for cross-validation, model optimization, and scalable docker deployment"
-            ]
-        },
-        {
-            "role": "Graduate Teaching and Research Assistant",
-            "organization": "Boston University",
-            "duration": "Jan 2024 - Present",
-            "responsibilities": [
-                "Teaching Assistant for CS 699 Data Mining and DS 210 Programming for Data Science, responsible for grading, leading problem-solving sessions, and guiding students on R, Python, Rust, and Java projects.",
-                "Developed and fine-tuned a RoBERTa-based NLP model to classify student-submitted reports as AI-generated or human-written, enhancing academic submission integrity."
-            ]
-        },
-        {
-            "role": "Data Scientist",
-            "organization": "Gera Developments Pvt Ltd",
-            "duration": "Jul 2022 - Sep 2023",
-            "responsibilities": [
-                "Developed and deployed a real-time sentiment analysis model for customer emails using NLP and Hugging Face's BERT, achieving 85% accuracy and reducing CRM workload by 15%.",
-                "Led the development of 'Customer Happiness Meter,' improving customer engagement and marketing strategies by 35%.",
-                "Collaborated with cross-functional teams to implement ML models, MS SQL, and ETL pipelines.",
-                "Devised Power BI dashboards to effectively communicate technical findings to non-technical stakeholder via engaging presentations, ensuring alignment with responsible growth initiatives and building strong professional relationships.",
-                "Conducted A/B tests in Python to evaluate marketing campaign conversion rates, generating an additional $1.3 million in revenue."
-            ]
-        },
-        {
-            "role": "Data Science & Research Intern",
-            "organization": "Winjit Technologies",
-            "duration": "Oct 2021 - Feb 2022",
-            "responsibilities": [
-                "Preprocessed 100GB+ of data using Python, improving model training time by 15%.",
-                "Optimized AutoML and Explainable AI algorithms, reducing time complexity by 20% and automating 80% of processes.",
-                "Developed interactive Power BI dashboards for financial monitoring, reducing response time for 30+ clients."
-            ]
-        }
+      "company": "DataBuddy",
+      "location": "Boston, MA",
+      "title": "Data Scientist",
+      "start_date": "May 2024",
+      "end_date": "Present",
+      "responsibilities": [
+        "Cut data scientist workload 65% via problem-solving RAG system with AWS Lambda, LangChain, Feast meeting customer needs",
+        "Boosted model F1 25% by tuning PyTorch, TensorFlow transformers; pruned, quantized, compiled via TorchServe GPU’s, ONNX",
+        "Built fault-tolerant ML pipelines on AWS (Spark, S3, Kinesis) with Kubernetes autoscaling; reduced SLA violations by 40%",
+        "Implemented AI data quality checks using custom validation rules and schema enforcement to ensure robust model performance",
+        "Established ML observability with MLflow, DVC, and Delta Lake; improved feature reuse and cut debugging time by 50%",
+        "Used Agile practices and Git CI/CD with Jira to streamline generative AI microservice releases, reducing iteration time by 30%"
+      ]
+    },
+    {
+      "company": "Gera Developments",
+      "location": "Pune, India",
+      "title": "Data Scientist",
+      "start_date": "Jul 2022",
+      "end_date": "Sep 2023",
+      "responsibilities": [
+        "Delivered 85% accurate real-time sentiment classifier, cutting CRM triage 15%, via BERT, PySpark, TensorFlow NLP stream",
+        "Achieved 35% lift in marketing ROI by centralizing customer lakehouse data in Databricks SQL dashboards, viz, automation",
+        "Clustered customers into 5 segments using PCA and k-means, improving targeted email CTR by up to 22% in pilot tests",
+        "Led A/B tests using uplift modeling in Spark SQL, identifying strategies contributing to $1.3M potential revenue impact",
+        "Maintained 99.9% model uptime by automating CI/CD with AWS SageMaker, Docker, MLflow, Prometheus alerts MLOps",
+        "Enabled 30% faster C-suite decisions via interactive Power BI dashboards with DAX, storytelling, drilldowns, KPI viz SQL",
+        "Promoted to Innovation Lab Leader; delivered 4 ML solutions in 6 months, driving product OKRs and cross-functional agile sprints"
+      ]
+    },
+    {
+      "company": "Winjit Technologies",
+      "location": "Nashik, India",
+      "title": "Jr. Data Scientist",
+      "start_date": "Jul 2021",
+      "end_date": "Jun 2022",
+      "responsibilities": [
+        "Mapped customer needs via data storytelling; set KPIs with experimental design and keen attention-to-detail, cut churn by 12%",
+        "Queried database and NoSQL logs; used data mining, statistics, mathematics to engineer features, lifting ml model’s F1 score 18%",
+        "Built ARIMA, Decision Trees, Random Forest, XGBoost, LSTM; applied data modeling and problem-solving, boosting accuracy",
+        "Automated Airflow flows on cloud computing; cross-functional crew used version control to ship data structures 30% faster",
+        "Delivered business intelligence stack; merged data visualization dashboards with KPIs, cutting decision making by two weeks"
+      ]
+    },
+    {
+      "title": "Data Science and Research Intern",
+      "start_date": "May 2019",
+      "end_date": "Jul 2021",
+      "responsibilities": [
+        "Analyzed 50+ clinical studies, synthesizing findings into feature hypotheses, lifting predictive AUROC 8% in trials R&D",
+        "Preprocessed 100GB healthcare semi-structured data via PySpark, Pandas, SQL; cut training time 30% & accuracy +10% gain",
+        "Optimized statistical & ML models plus data pipeline’s, automating 80% wrangling; cut reporting latency 35% via KPI analytics"
+      ]
+    },
+    {
+      "company": "L&T Technology Services",
+      "location": "Mumbai, India",
+      "title": "Data Analyst Intern",
+      "start_date": "Jan 2019",
+      "end_date": "Mar 2019",
+      "responsibilities": [
+        "Rectified anomalies via Z-score, control charts & SQL ETL; attention-to-detail boosted dataset accuracy 95%, enabling BI reports",
+        "Boosted model F1 20% via data cleansing; applied chi-square, ANOVA using statistics and mathematics to structure features"
+      ]
+    },
+    {
+      "company": "LLajja - Sustainable Fashion E-Commerce",
+      "location": "Noida, India",
+      "title": "Software Engineering Intern",
+      "start_date": "May 2018",
+      "end_date": "Aug 2018",
+      "responsibilities": [
+        "Engineered React-Firebase uploader ingesting CSV 5k rows/min TS; cut SKU ingest time 70% rapid via Git CI/CD automation",
+        "Implemented Node.js promo engine with Stripe coupon API, Redis KVS; raised checkout conversion 18% & revenue 22% uplift"
+      ]
+    }
     ],
     "projects": [
         {
