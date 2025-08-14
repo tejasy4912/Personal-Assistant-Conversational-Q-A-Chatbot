@@ -1,208 +1,191 @@
 {
-    "name": "Tejas Yogesh Pawar",
-    "contact": {
-        "address": "Boston, MA 02135",
-        "phone": "(617) 659-4081",
-        "email": "tejasypawar8@gmail.com",
-        "links": [
-            {
-                "name": "LinkedIn",
-                "url": "https://www.linkedin.com/in/tejaspawar21/"
-            },
-            {
-                "name": "GitHub",
-                "url": "https://github.com/tejasy4912"
-            },
-            {
-                "name": "Portfolio",
-                "url": "https://www.tejaspawar.in/"
-            },
-            {
-                "name": "Schedule a Meet with Tejas",
-                "url": "https://calendly.com/tejas_pawar"
-            },
-            {
-                "name": "Resume of Tejas",
-                "url": "https://www.tejaspawar.in/_files/ugd/48cfe5_18dd4f942dac4ae685312357cee4dfb2.pdf"
-            }
-
-        ]
+  "name": "Tejas Yogesh Pawar",
+  "contact": {
+    "address": "Boston, MA 02135",
+    "phone": "(617) 659-4081",
+    "email": "tejasypawar8@gmail.com",
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/tejaspawar21/" },
+      { "name": "GitHub", "url": "https://github.com/tejasy4912" },
+      { "name": "Portfolio", "url": "https://www.tejaspawar.in/" },
+      { "name": "Schedule a Meet with Tejas", "url": "https://calendly.com/tejas_pawar" },
+      { "name": "Resume of Tejas", "url": "https://www.tejaspawar.in/_files/ugd/48cfe5_18dd4f942dac4ae685312357cee4dfb2.pdf" }
+    ]
+  },
+  "summary": "Data scientist with a strong foundation in Python, ETL, Experimental Design, and Machine Learning for analyzing business needs, executing process improvements, and supporting decision-making, with a track record of successful project completion.",
+  "work_authorization": {
+    "status": "Authorized to work in the United States",
+    "details": "Currently on F1 STEM OPT, eligible to work for any employer for 3 years without sponsorship.",
+    "sponsorship_preference": "Would appreciate visa sponsorship if possible.",
+    "employment_type": "Open to full-time or contract-based opportunities."
+  },
+  "education": {
+    "masters": {
+      "degree": "Master of Science in Applied Data Analytics",
+      "concentration": "Machine Learning",
+      "institution": "Boston University",
+      "gpa": "3.77",
+      "graduation_date": "Dec 2024",
+      "coursework": [
+        "Analysis of Algorithm",
+        "Data Analytics with R",
+        "Data Mining",
+        "Web Mining and Graph Analytics",
+        "Foundations of Machine Learning",
+        "Designing and Implementing a Data Warehouse",
+        "Advanced Machine Learning and Neural Networks",
+        "Data Science with Python",
+        "Health Informatics"
+      ]
     },
-    "summary": "Data scientist with a strong foundation in Python, ETL, Experimental Design, and Machine Learning for analyzing business needs, executing process improvements, and supporting decision-making, with a track record of successful project completion.",
-    "work_authorization": {
-        "status": "Authorized to work in the United States",
-        "details": "Currently on F1 STEM OPT, eligible to work for any employer for 3 years without sponsorship.",
-        "sponsorship_preference": "Would appreciate visa sponsorship if possible.",
-        "employment_type": "Open to full-time or contract-based opportunities."
+    "bachelors": {
+      "degree": "B.Tech in Computer Science Engineering",
+      "concentration": "Data Science",
+      "institution": "D Y Patil International University",
+      "gpa": "3.65",
+      "graduation_date": "Jun 2023",
+      "coursework": [
+        "Introduction to Python",
+        "Applied Computational Mathematics 1",
+        "Applied Computational Mathematics 2",
+        "Basic Electronics",
+        "Digital Logic Design",
+        "Introduction to Communication Systems",
+        "Data Structures",
+        "Database Management Systems",
+        "Design Thinking",
+        "Computer Organisation",
+        "Computer Networks",
+        "Software Engineering and Project Management",
+        "Introduction to Intelligent Systems",
+        "DSP Systems",
+        "Database Systems",
+        "System Software",
+        "Embedded System",
+        "Technology Commercialisation and Management",
+        "System Security",
+        "Fundamentals of AI/ML",
+        "Principles of Data Science & Engineering",
+        "Deep Neural Networks",
+        "Quantum Computing",
+        "Big Data Analysis",
+        "Knowledge Discovery and Data Mining",
+        "Data Visualisation",
+        "Advance Data Science",
+        "Human Physiology (Health Data Science)",
+        "Supply Chain (Open Elective 1)",
+        "Introduction to Fintech (Open Elective 2)"
+      ]
+    }
+  },
+  "skills": {
+    "tools": [
+      "Python",
+      "R",
+      "SQL",
+      "Excel",
+      "Jupyter",
+      "VS Code",
+      "Power BI",
+      "Tableau",
+      "Looker",
+      "Apache Spark",
+      "Airflow",
+      "Snowflake",
+      "Microsoft Azure",
+      "Google Cloud Platform",
+      "AWS",
+      "Streamlit",
+      "Docker",
+      "Databricks",
+      "MLflow",
+      "Google Vertex AI",
+      "LangChain",
+      "LoRA",
+      "OpenAI API"
+    ],
+    "python_packages": [
+      "Pandas",
+      "NumPy",
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "Scikit Learn",
+      "SciPy",
+      "OpenCV",
+      "SpaCy",
+      "Matplotlib",
+      "Plotly"
+    ],
+    "domains": {
+      "data_science": [
+        "Analytics",
+        "Statistics",
+        "Data Wrangling and Processing",
+        "Data Visualization",
+        "Data Mining",
+        "Hypothesis Testing"
+      ],
+      "machine_learning": [
+        "Classification",
+        "Regression",
+        "Clustering",
+        "Decision Trees",
+        "Boosting",
+        "Deep Learning",
+        "Predictive Modelling"
+      ],
+      "nlp": [
+        "Text Pre-processing",
+        "BOW",
+        "N-Grams",
+        "TF-IDF",
+        "Word2Vec",
+        "BERT",
+        "LSTM",
+        "Sentiment Analysis",
+        "Text Classification"
+      ],
+      "computer_vision": [
+        "Image Processing",
+        "Object Detection",
+        "Pattern Recognition",
+        "CNN",
+        "Variational Autoencoder"
+      ],
+      "mlops": [
+        "Model Deployment",
+        "Model Serving",
+        "Monitoring and Logging",
+        "MLflow",
+        "Version Control",
+        "CI/CD",
+        "Data Pipelines"
+      ],
+      "research": [
+        "Large Language Models",
+        "Generative AI",
+        "Recommendation Systems",
+        "Robotics and Automation"
+      ]
     },
-    "education": {
-        "masters": {
-            "degree": "Master of Science in Applied Data Analytics",
-            "concentration": "Machine Learning",
-            "institution": "Boston University",
-            "gpa": "3.77",
-            "graduation_date": "Dec 2024",
-            "coursework": [
-                "Analysis of Algorithm",
-                "Data Analytics with R",
-                "Data Mining",
-                "Web Mining and Graph Analytics",
-                "Foundations of Machine Learning",
-                "Designing and Implementing a Data Warehouse",
-                "Advanced Machine Learning and Neural Networks",
-                "Data Science with Python",
-                "Health Informatics"
-            ]
-        },
-        "bachelors": {
-            "degree": "B.Tech in Computer Science Engineering",
-            "concentration": "Data Science",
-            "institution": "D Y Patil International University",
-            "gpa": "3.65",
-            "graduation_date": "Jun 2023",
-            "coursework": [
-                "Introduction to Python",
-                "Applied Computational Mathematics 1",
-                "Applied Computational Mathematics 2",
-                "Basic Electronics",
-                "Digital Logic Design",
-                "Introduction to Communication Systems",
-                "Data Structures",
-                "Database Management Systems",
-                "Design Thinking",
-                "Computer Organisation",
-                "Computer Networks",
-                "Software Engineering and Project Management",
-                "Introduction to Intelligent Systems",
-                "DSP Systems",
-                "Database Systems",
-                "System Software",
-                "Embedded System",
-                "Technology Commercialisation and Management",
-                "System Security",
-                "Fundamentals of AI/ML",
-                "Principles of Data Science & Engineering",
-                "Deep Neural Networks",
-                "Quantum Computing",
-                "Big Data Analysis",
-                "Knowledge Discovery and Data Mining",
-                "Data Visualisation",
-                "Advance Data Science",
-                "Human Physiology (Health Data Science)",
-                "Supply Chain (Open Elective 1)",
-                "Introduction to Fintech (Open Elective 2)"
-            ]
-        }
-    },
-    "skills": {
-        "tools": [
-            "Python",
-            "R",
-            "SQL",
-            "Excel",
-            "Jupyter",
-            "VS Code",
-            "Power BI",
-            "Tableau",
-            "Looker",
-            "Apache Spark",
-            "Airflow",
-            "Snowflake",
-            "Microsoft Azure",
-            "Google Cloud Platform",
-            "AWS",
-            "Streamlit",
-            "Docker",
-            "Databricks",
-            "ML Flow",
-            "Google Vertex AI",
-            "LangChain",
-            "LoRA",
-            "OpenAI API"
-        ],
-        "python_packages": [
-            "Pandas",
-            "NumPy",
-            "TensorFlow",
-            "PyTorch",
-            "Keras",
-            "Scikit Learn",
-            "SciPy",
-            "OpenCV",
-            "SpaCy",
-            "Matplotlib",
-            "Plotly"
-        ],
-        "domains": {
-            "data_science": [
-                "Analytics",
-                "Statistics",
-                "Data Wrangling and Processing",
-                "Data Visualization",
-                "Data Mining",
-                "Hypothesis Testing"
-            ],
-            "machine_learning": [
-                "Classification",
-                "Regression",
-                "Clustering",
-                "Decision Trees",
-                "Boosting",
-                "Deep Learning",
-                "Predictive Modelling"
-            ],
-            "nlp": [
-                "Text Pre-processing",
-                "BOW",
-                "N-Grams",
-                "TF-IDF",
-                "Word2Vec",
-                "BERT",
-                "LSTM",
-                "Sentiment Analysis",
-                "Text Classification"
-            ],
-            "computer_vision": [
-                "Image Processing",
-                "Object Detection",
-                "Pattern Recognition",
-                "CNN",
-                "Variational Autoencoder"
-            ],
-            "mlops": [
-                "Model Deployment",
-                "Model Serving",
-                "Monitoring and Logging",
-                "MLflow",
-                "Version Control",
-                "CI/CD",
-                "Data Pipelines"
-            ],
-            "research": [
-                "Large Language Models",
-                "Generative AI",
-                "Recommendation Systems",
-                "Robotics and Automation"
-            ]
-        },
-        "soft_skills": [
-            "Leadership",
-            "Project Management",
-            "Strategic Problem-Solving",
-            "Ability to Influence Decision-Making",
-            "Team Player"
-        ]
-    },
-    "experience": [
-        {
-      "company": "DataBuddy",
+    "soft_skills": [
+      "Leadership",
+      "Project Management",
+      "Strategic Problem-Solving",
+      "Ability to Influence Decision-Making",
+      "Team Player"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Data Scientist",
+      "organization": "DataBuddy",
       "location": "Boston, MA",
-      "title": "Data Scientist",
-      "start_date": "May 2024",
-      "end_date": "Present",
+      "duration": "May 2024 – Present",
       "responsibilities": [
         "Cut data scientist workload 65% via problem-solving RAG system with AWS Lambda, LangChain, Feast meeting customer needs",
-        "Boosted model F1 25% by tuning PyTorch, TensorFlow transformers; pruned, quantized, compiled via TorchServe GPU’s, ONNX",
+        "Boosted model F1 25% by tuning PyTorch, TensorFlow transformers; pruned, quantized, compiled via TorchServe GPUs, ONNX",
         "Built fault-tolerant ML pipelines on AWS (Spark, S3, Kinesis) with Kubernetes autoscaling; reduced SLA violations by 40%",
         "Implemented AI data quality checks using custom validation rules and schema enforcement to ensure robust model performance",
         "Established ML observability with MLflow, DVC, and Delta Lake; improved feature reuse and cut debugging time by 50%",
@@ -210,159 +193,156 @@
       ]
     },
     {
-      "company": "Gera Developments",
+      "role": "Data Scientist",
+      "organization": "Gera Developments",
       "location": "Pune, India",
-      "title": "Data Scientist",
-      "start_date": "Jul 2022",
-      "end_date": "Sep 2023",
+      "duration": "Jul 2022 – Sep 2023",
       "responsibilities": [
         "Delivered 85% accurate real-time sentiment classifier, cutting CRM triage 15%, via BERT, PySpark, TensorFlow NLP stream",
-        "Achieved 35% lift in marketing ROI by centralizing customer lakehouse data in Databricks SQL dashboards, viz, automation",
+        "Achieved 35% lift in marketing ROI by centralizing customer lakehouse data in Databricks SQL dashboards, visualization, automation",
         "Clustered customers into 5 segments using PCA and k-means, improving targeted email CTR by up to 22% in pilot tests",
         "Led A/B tests using uplift modeling in Spark SQL, identifying strategies contributing to $1.3M potential revenue impact",
-        "Maintained 99.9% model uptime by automating CI/CD with AWS SageMaker, Docker, MLflow, Prometheus alerts MLOps",
-        "Enabled 30% faster C-suite decisions via interactive Power BI dashboards with DAX, storytelling, drilldowns, KPI viz SQL",
-        "Promoted to Innovation Lab Leader; delivered 4 ML solutions in 6 months, driving product OKRs and cross-functional agile sprints"
+        "Maintained 99.9% model uptime by automating CI/CD with AWS SageMaker, Docker, MLflow, Prometheus alerts",
+        "Enabled 30% faster C-suite decisions via interactive Power BI dashboards with DAX, storytelling, drilldowns, KPIs",
+        "Promoted to Innovation Lab Leader; delivered 4 ML solutions in 6 months, driving product OKRs and cross-functional sprints"
       ]
     },
     {
-      "company": "Winjit Technologies",
+      "role": "Jr. Data Scientist",
+      "organization": "Winjit Technologies",
       "location": "Nashik, India",
-      "title": "Jr. Data Scientist",
-      "start_date": "Jul 2021",
-      "end_date": "Jun 2022",
+      "duration": "Jul 2021 – Jun 2022",
       "responsibilities": [
-        "Mapped customer needs via data storytelling; set KPIs with experimental design and keen attention-to-detail, cut churn by 12%",
-        "Queried database and NoSQL logs; used data mining, statistics, mathematics to engineer features, lifting ml model’s F1 score 18%",
-        "Built ARIMA, Decision Trees, Random Forest, XGBoost, LSTM; applied data modeling and problem-solving, boosting accuracy",
-        "Automated Airflow flows on cloud computing; cross-functional crew used version control to ship data structures 30% faster",
-        "Delivered business intelligence stack; merged data visualization dashboards with KPIs, cutting decision making by two weeks"
+        "Mapped customer needs via data storytelling; set KPIs with experimental design, cutting churn by 12%",
+        "Queried databases and NoSQL logs; engineered features with statistics and ML, lifting model F1 by 18%",
+        "Built ARIMA, Decision Trees, Random Forest, XGBoost, LSTM; improved accuracy through data modeling and problem-solving",
+        "Automated Airflow DAGs on cloud; shipped data structures 30% faster with version control",
+        "Delivered BI stack; dashboards with KPIs cut decision time by two weeks"
       ]
     },
     {
-      "title": "Data Science and Research Intern",
-      "start_date": "May 2019",
-      "end_date": "Jul 2021",
+      "role": "Data Science and Research Intern",
+      "organization": "Bio/Healthcare R&D (Various)",
+      "location": "India",
+      "duration": "May 2019 – Jul 2021",
       "responsibilities": [
-        "Analyzed 50+ clinical studies, synthesizing findings into feature hypotheses, lifting predictive AUROC 8% in trials R&D",
-        "Preprocessed 100GB healthcare semi-structured data via PySpark, Pandas, SQL; cut training time 30% & accuracy +10% gain",
-        "Optimized statistical & ML models plus data pipeline’s, automating 80% wrangling; cut reporting latency 35% via KPI analytics"
+        "Analyzed 50+ clinical studies; synthesized features, lifting AUROC by 8% in trials",
+        "Preprocessed ~100GB healthcare data via PySpark, Pandas, SQL; cut training time 30% and improved accuracy by 10%",
+        "Automated 80% of data wrangling; reduced reporting latency 35% via KPI analytics"
       ]
     },
     {
-      "company": "L&T Technology Services",
+      "role": "Data Analyst Intern",
+      "organization": "L&T Technology Services",
       "location": "Mumbai, India",
-      "title": "Data Analyst Intern",
-      "start_date": "Jan 2019",
-      "end_date": "Mar 2019",
+      "duration": "Jan 2019 – Mar 2019",
       "responsibilities": [
-        "Rectified anomalies via Z-score, control charts & SQL ETL; attention-to-detail boosted dataset accuracy 95%, enabling BI reports",
-        "Boosted model F1 20% via data cleansing; applied chi-square, ANOVA using statistics and mathematics to structure features"
+        "Fixed anomalies via Z-score, control charts, and SQL ETL; raised dataset accuracy to 95%",
+        "Improved model F1 20% via data cleansing; used chi-square and ANOVA for feature selection"
       ]
     },
     {
-      "company": "LLajja - Sustainable Fashion E-Commerce",
+      "role": "Software Engineering Intern",
+      "organization": "LLajja - Sustainable Fashion E-Commerce",
       "location": "Noida, India",
-      "title": "Software Engineering Intern",
-      "start_date": "May 2018",
-      "end_date": "Aug 2018",
+      "duration": "May 2018 – Aug 2018",
       "responsibilities": [
-        "Engineered React-Firebase uploader ingesting CSV 5k rows/min TS; cut SKU ingest time 70% rapid via Git CI/CD automation",
-        "Implemented Node.js promo engine with Stripe coupon API, Redis KVS; raised checkout conversion 18% & revenue 22% uplift"
+        "Built React-Firebase uploader ingesting 5k rows/min; cut SKU ingest time 70% via CI/CD",
+        "Implemented Node.js promo engine with Stripe coupons and Redis; +18% conversion, +22% revenue"
       ]
     }
-    ],
-    "projects": [
-        {
-            "title": "Personal Assistant Conversational Q&A Chatbot",
-            "duration": "Sep 2024 \u2013 Nov 2024",
-            "description": [
-                "Engineered and deployed a personal assistant chatbot utilizing OpenAI's GPT-3.5 Turbo model, showcasing proficiency in natural language processing, model integration, and deploying AI solutions to production environments.",
-                "Implemented end-to-end machine learning workflows\u2014including data preprocessing, API development, and backend integration on Hugging Face Spaces\u2014demonstrating expertise in building scalable machine learning applications."
-            ]
-        },
-        {
-            "title": "Text To Image Generation App",
-            "duration": "Jan 2024 \u2013 Apr 2024",
-            "description": [
-                "Fine-tuned the Stable Diffusion XL model using a specialized science diagrams multimodal dataset, enhancing its efficiency for accurate image generation, deployed the model via Amazon SageMaker for robust scalability.",
-                "Developed an iOS app with Xcode integrating this advanced AI model for seamless text-to-image conversions."
-            ]
-        },
-        {
-            "title": "Identification of Bullying Victims Using Data Mining Techniques",
-            "duration": "Sep 2023 \u2013 Dec 2023",
-            "description": [
-                "Demonstrated expertise in R programming and data mining by effectively reducing a complex dataset of 204 attributes to 31 essential features using LASSO and ANOVA F-test, significantly improving the predictive accuracy.",
-                "Skillfully applied hyperparameter tuning and rigorous model evaluation across nine machine learning models, favoring a logistic regression model for its balanced accuracy across classes."
-            ]
-        },
-        {
-            "title": "Digital Logistic System: The Next Generation Transport System - Robotics",
-            "duration": "Aug 2022 \u2013 Jan 2023",
-            "description": [
-                "Developed a line-following robot for the Digital Logistic System (DLS), using Arduino, ultrasonic and infrared sensors, and C++ programming, showcasing skills in robotics and embedded system design.",
-                "Innovated the DLS project, integrating AI and machine learning with Python, MQTT for IoT communications, and ROS for simulations, to enhance logistics efficiency and reduce operational costs."
-            ]
-        },
-        {
-            "title": "Barbie With Brains",
-            "duration": "Jan 2022 \u2013 May 2022",
-            "description": [
-                "Engineered an interactive virtual assistant using an RNN (Recurrent Neural Network) model for speech recognition, seamlessly integrated into a toy to provide an educational and entertaining experience for children.",
-                "Incorporated features like storytelling, counting, word spelling, and reminder settings powered by Mycroft's API."
-            ]
-        },
-        {
-            "title": "Image Processing for Diabetic Retinopathy Prediction",
-            "duration": "Aug 2021 \u2013 Dec 2021",
-            "description": [
-                "Developed and validated a 52-layer deep MobileNetV2 convolutional neural network (CNN) model to process retinal images, achieving a detection and classification accuracy of 74.93% on the test dataset.",
-                "Implemented advanced image classification techniques to categorize retinopathy into five distinct stages: None, Mild, Moderate, Severe, and Proliferative Diabetic Retinopathy."
-            ]
-        }
-    ],
-    "certifications": [
-        "Associate Data Scientist, DataCamp",
-        "AWS Certified Machine Learning Engineer - Associate (in progress)"
-    ],
-    "publications": [
-        {
-            "title": "DNA Sequencing-induced Cancer Detection: A Representation Learning-inspired Sustainable Transformation in Internet of Healthcare it received Best Research Paper Award",
-            "conference": "8th International Conference on Emerging Applications of Information Technology 2024",
-            "publication": "Springer Journal - Machine Learning for Social Transformation",
-            "award": "Best Research Paper Award"
-        }
-    ],
-    "leadership": [
-        {
-            "role": "Innovation Lab Leader",
-            "organization": "Gera Developments Pvt Ltd",
-            "duration": "Mar 2023 - Sep 2023",
-            "responsibilities": [
-                "Led a team of senior managers to integrate 4 ML solutions across departments in 6 months.",
-                "Guided stakeholders' decisions through strategic leadership and data insights."
-            ]
-        },
-        {
-            "role": "Data Science Community Lead",
-            "organization": "D Y Patil International University",
-            "duration": "Aug 2021 - Mar 2023",
-            "responsibilities": [
-                "Mentored a community of 200+ data science enthusiasts.",
-                "Bridged the gap between academia and real-world applications."
-            ]
-        }
-    ],
-    "volunteer": [
-        {
-            "role": "Founder",
-            "organization": "Young Dumb Broke",
-            "duration": "Jun 2020 - Present",
-            "responsibilities": [
-                "Coordinated food drives for hunger relief.",
-                "Led a partnership to plant and nurture 2,000+ trees during COVID-19."
-            ]
-        }
-    ]
+  ],
+  "projects": [
+    {
+      "title": "Personal Assistant Conversational Q&A Chatbot",
+      "duration": "Sep 2024 – Nov 2024",
+      "description": [
+        "Engineered and deployed a personal assistant chatbot utilizing OpenAI's GPT-3.5 Turbo model, showcasing proficiency in natural language processing, model integration, and deploying AI solutions to production environments.",
+        "Implemented end-to-end machine learning workflows—including data preprocessing, API development, and backend integration on Hugging Face Spaces—demonstrating expertise in building scalable machine learning applications."
+      ]
+    },
+    {
+      "title": "Text To Image Generation App",
+      "duration": "Jan 2024 – Apr 2024",
+      "description": [
+        "Fine-tuned the Stable Diffusion XL model using a specialized science diagrams multimodal dataset, enhancing its efficiency for accurate image generation; deployed the model via Amazon SageMaker for robust scalability.",
+        "Developed an iOS app with Xcode integrating this advanced AI model for seamless text-to-image conversions."
+      ]
+    },
+    {
+      "title": "Identification of Bullying Victims Using Data Mining Techniques",
+      "duration": "Sep 2023 – Dec 2023",
+      "description": [
+        "Reduced a complex dataset of 204 attributes to 31 essential features using LASSO and ANOVA F-test, significantly improving predictive performance.",
+        "Applied hyperparameter tuning and rigorous model evaluation across nine ML models, selecting logistic regression for balanced accuracy."
+      ]
+    },
+    {
+      "title": "Digital Logistic System: The Next Generation Transport System - Robotics",
+      "duration": "Aug 2022 – Jan 2023",
+      "description": [
+        "Developed a line-following robot using Arduino, ultrasonic and infrared sensors, and C++ programming, showcasing robotics and embedded systems.",
+        "Integrated AI/ML with Python, MQTT for IoT communications, and ROS simulations to enhance logistics efficiency and reduce costs."
+      ]
+    },
+    {
+      "title": "Barbie With Brains",
+      "duration": "Jan 2022 – May 2022",
+      "description": [
+        "Built an interactive virtual assistant using an RNN for speech recognition, integrated into a toy for educational engagement.",
+        "Added storytelling, counting, word spelling, and reminder features via Mycroft API."
+      ]
+    },
+    {
+      "title": "Image Processing for Diabetic Retinopathy Prediction",
+      "duration": "Aug 2021 – Dec 2021",
+      "description": [
+        "Developed a 52-layer MobileNetV2 CNN to classify retinal images, achieving 74.93% test accuracy.",
+        "Classified five stages of retinopathy: None, Mild, Moderate, Severe, Proliferative Diabetic Retinopathy."
+      ]
+    }
+  ],
+  "certifications": [
+    "Associate Data Scientist, DataCamp",
+    "AWS Certified Machine Learning Engineer - Associate (in progress)"
+  ],
+  "publications": [
+    {
+      "title": "DNA Sequencing-induced Cancer Detection: A Representation Learning-inspired Sustainable Transformation in Internet of Healthcare",
+      "conference": "8th International Conference on Emerging Applications of Information Technology 2024",
+      "publication": "Springer Journal - Machine Learning for Social Transformation",
+      "award": "Best Research Paper Award"
+    }
+  ],
+  "leadership": [
+    {
+      "role": "Innovation Lab Leader",
+      "organization": "Gera Developments Pvt Ltd",
+      "duration": "Mar 2023 – Sep 2023",
+      "responsibilities": [
+        "Led a team of senior managers to integrate 4 ML solutions across departments in 6 months.",
+        "Guided stakeholders' decisions through strategic leadership and data insights."
+      ]
+    },
+    {
+      "role": "Data Science Community Lead",
+      "organization": "D Y Patil International University",
+      "duration": "Aug 2021 – Mar 2023",
+      "responsibilities": [
+        "Mentored a community of 200+ data science enthusiasts.",
+        "Bridged the gap between academia and real-world applications."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "role": "Founder",
+      "organization": "Young Dumb Broke",
+      "duration": "Jun 2020 – Present",
+      "responsibilities": [
+        "Coordinated food drives for hunger relief.",
+        "Led a partnership to plant and nurture 2,000+ trees during COVID-19."
+      ]
+    }
+  ]
 }
